@@ -5,82 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/protfolio style.css">
     <title>POrtfolio Profile </title>
-</head>      
-<body>
-    <!-- main.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main | Zaital's Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-     <h1>About Me</h1>
-         <div class="abt-name">
-              <img src="images/pic.jpg" alt="profile-pic" class="img">
-            
-            <div class="my-name">
-                <h3>Hi, I'm Atal,</h3>
-                <p> a passionate web developer eager to build beautiful and functional websites...</p>
-            </div>
-       </div> 
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h1>Skills</h1>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>C programing languages</li>
-      <li>React (Learning)</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h1>Projects</h1>
-    <div class="project-card">
-      <h2>Portfolio Website</h2>
-      <p>A responsive and interactive personal portfolio built with HTML, CSS, and JavaScript.</p>
-    </div>
-    <!-- Add more project cards here -->
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h1>Contact Me</h1>
-    <form 
-    action="https://formsubmit.co/atalverma0001@gmail.com" method="post"
-    >
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Atal. All rights reserved.</p>
-  </footer>
+    <style>
   
-</body>
-</html>
+  body {
+    margin: 0;
+    background-color: #0f2027; /* solid fallback color */
+    overflow: hidden;          /* hide scroll until ready */
+    visibility: hidden;        /* hide body initially */
+  }
+</style>
+
+</head>      
+<body class="hidden">
+
+  <div class="welcome-screen" id="welcomescreen">
+    <h1 class="welcome-text">Welcome To My Portfolio</h1>
+  </div>
+  
+  <div id="mainPage" class="main-content">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h1>About Me</h1>
+          <div class="abt-name">
+                <img src="images/pic.jpg" alt="profile-pic" class="img">
+              
+              <div class="my-name">
+                  <h3>Hi, I'm Atal,</h3>
+                  <p> a passionate web developer eager to build beautiful and functional websites...</p>
+              </div>
+        </div> 
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h1>Skills</h1>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C programing languages</li>
+        <li>React (Learning)</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h1>Projects</h1>
+      <div class="project-card">
+        <h2>Portfolio Website</h2>
+        <p>A responsive and interactive personal portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <!-- Add more project cards here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h1>Contact Me</h1>
+      <form 
+      action="https://formsubmit.co/atalverma0001@gmail.com" method="post"
+      >
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Atal. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

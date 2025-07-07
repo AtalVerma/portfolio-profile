@@ -6,12 +6,46 @@
   font-family: 'Poppins', sans-serif;
 }
 
+  
+
+body.show-content {
+  visibility: visible;
+  overflow: auto;
+}
+
+/* Welcome screen styles and fade */
+.welcome-screen {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.welcome-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 body {
   background: linear-gradient(to right,#0f2027,#203a43,#2c5364 );
   color: #fff;
   animation: gradientMove 20s ease infinite;
   background-size: 400% 400%;
+  overflow: hidden;
 }
+.hidden {
+    visibility: hidden;
+  }
 @keyframes gradientMove{
   0%{
     background-position: 0% 50%;
