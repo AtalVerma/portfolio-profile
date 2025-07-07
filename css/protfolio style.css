@@ -58,3 +58,31 @@ nav ul {
   width: 80%;
   border-radius: 10px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 60%;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  background-color: #00c9ff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.4);
+}
