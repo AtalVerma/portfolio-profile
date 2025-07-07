@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background:#f3f3f3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#333;
+}
+
+.header{
+    background-color: #222;line-height: 1.8;
+    font-size: 1rem;
+}
+.links{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    margin-right:20px;
+    margin-left:20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+  text-decoration:underline;
+}
+.hero{
+text-align: center;
+padding:100px 20px ;
+background: linear-gradient(to right,#ff6a00,#ee0979); 
+color:white;
+}
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:1.2rem;
+    margin-bottom: 30px;
+}
+.btn-container{
+    margin-top:20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    width:25%;
+    background-color: white;
+    color:#ee0979;
+    font-weight: bold;
+    text-decoration: none;
+    transition:0.3s;
+}
+.btn:hover{
+    background-color:#ddd;
+}
+#welcome-screen{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* background:linear-gradient(-25deg,#a18cd1,#fbc2eb,#c2ffd8,#8fd3f4); */
+    background:linear-gradient(-45deg,#1e1e2f,#2c003e,#003049,#0f2027);
+    background-size:400% 400%;
+   font-weight: bolder;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2rem;
+    z-index:1000;
+    animation: gradientBG 1s ease,fadeout 1s ease 2.5s forwards;
+}
+@keyframes gradientBg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+@keyframes fadeout{
+    to{
+        opacity:0;
+        visibility: hidden;
+    }
+}
+#main-content{
+    opacity:0;
+    transition: opacity 1s ease;
+}
+#main-content.show{
+  opacity: 1;
+}
+#welcome-screen h2{
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #c2ffd8;
+}
+#welcome-screen p{
+margin-top: 10px;
+font-size:1.2rem;
+color:#eeeeee;
+opacity:0.9;
+}

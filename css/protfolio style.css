@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.section{
+   padding: 50px 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.abt-name{
+    display: flex;
+    flex-direction: row;
+}
+.my-name{
+    display: flex;
+    flex-direction:column;
+    margin: 100px;
+}
+.img{
+    border-radius: 50%;
+}
+.skills-list {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding:20px;
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5em;
+  flex-flow:row wrap;
+  align-content: flex-start;
+}
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+}
