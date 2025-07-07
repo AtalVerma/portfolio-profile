@@ -7,8 +7,21 @@
 }
 
 body {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right,#0f2027,#203a43,#2c5364 );
   color: #fff;
+  animation: gradientMove 20s ease infinite;
+  background-size: 400% 400%;
+}
+@keyframes gradientMove{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position:100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 
 header {
@@ -87,3 +100,44 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-width: 600px) {
+nav ul{
+  flex-direction: column;
+  gap:1em;
+}
+.section{
+  padding:60px 10px;
+}
+.skills-list{
+  flex-direction: column;
+  align-items: center;
+}
+.project-card{
+  width:95%;
+  padding:15px;
+}
+form{
+  width: 90%;
+}
+  
+}
+@media screen and (max-width: 900px) {
+nav ul{
+  flex-wrap:wrap;
+  gap:1em;
+}
+.section{
+  padding:80px 15px;
+}
+.skills-list{
+  gap:1em;
+}
+.project-card{
+  width:90%;
+  
+}
+form{
+  width: 75%;
+}
+  
+}

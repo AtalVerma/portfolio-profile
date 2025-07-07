@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #f12711,#f5af19);
   color: #fff;
 }
 
@@ -31,6 +31,7 @@ nav ul li a {
   color:#fff;
   font-weight: bold;
 }
+
 .section {
   padding: 100px 20px;
   text-align: center;
@@ -80,3 +81,5 @@ footer {
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+
