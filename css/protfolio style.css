@@ -157,12 +157,48 @@ nav ul li a {
   align-content: flex-start;
 }
 .project-card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* glassy look */
   margin: 20px auto;
   padding: 20px;
-  width: 80%;
-  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 12px;
+  line-height: 1.5;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ffe7;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.2s ease;
+}
+
+.project-card a:hover {
+  border-color: #00ffe7;
+}
+
 form {
   display: flex;
   flex-direction: column;
